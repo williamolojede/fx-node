@@ -2,13 +2,13 @@ const https = require('https');
 
 // calculator
 function fxCalc(amount, rate){
-  return amount * rate;
+  const calc = parseFloat(amount) * parseFloat(rate);
+  return calc.toFixed(2);
 }
 
 // printer
-function fxPrinter(data){
-  const {amount, base, target, result} = data;
-  return `${amount} ${base} is ${result} ${target}`;
+function fxPrinter({ amount, base, target, result }){
+  console.log(`${amount} ${base} is ${result} ${target}`);
 }
 
 function fx ({base, amount, target}) {
@@ -21,7 +21,9 @@ function fx ({base, amount, target}) {
 
     // parse data and and it over to the calc the print the result out
     res.on('end', () => {
-      console.log(JSON.parse(body));
+      const rate = JSON.parse(body).rates[target.toUpperCase()];
+      const result  = fxCalc(amount, rate);
+      fxPrinter({ amount, base, target, result })
     });
   });
 }

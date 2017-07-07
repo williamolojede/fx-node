@@ -1,6 +1,9 @@
 # FX - NODE
 > A terminal based currency converter written in nodeJS
 
+## DEMO
+![demo][https://media.giphy.com/media/IRAz1gX6KOj9S/giphy.gif]
+
 ### API Used
 [fixer](http://fixer.io/)
 
