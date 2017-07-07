@@ -2,7 +2,7 @@
 > A terminal based currency converter written in nodeJS
 
 ## DEMO
-![demo][https://raw.githubusercontent.com/williamolojede/fx-node/master/demo.gif]
+![demo](https://raw.githubusercontent.com/williamolojede/fx-node/master/demo.gif)
 
 ### API Used
 [fixer](http://fixer.io/)
