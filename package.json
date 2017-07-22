@@ -1,0 +1,27 @@
+{
+  "name": "fx-node",
+  "version": "1.0.0",
+  "description": "A currency exchange app writtein in node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamolojede/fx-node.git"
+  },
+  "keywords": [
+    "FX",
+    "currency",
+    "exchange"
+  ],
+  "author": "William I. Olojede",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/williamolojede/fx-node/issues"
+  },
+  "homepage": "https://github.com/williamolojede/fx-node#readme",
+  "dependencies": {
+    "chalk": "^2.0.1"
+  }
+}

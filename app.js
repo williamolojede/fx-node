@@ -1,9 +1,14 @@
+const chalk = require('chalk');
 const fx = require('./fx');
+
+// check if user passed the required arguements
+if (process.argv.length === 2) {
+  console.log(chalk.red('Required arguements missing, please check the README!!!'));
+  return 0;
+}
 
 const input = process.argv.slice(2);
 
-// get the amount by filtering for the item that is a number
-// const amount = parseInt(query.filter(q => !isNaN(q))[0], 10);
 const [ amount, base, _, target ] = input;
 const query = {
   amount,
@@ -12,10 +17,3 @@ const query = {
 }
 
 fx.fx(query);
-// TODO
-// get amount from user
-// get base currency 
-// get target currency
-// fetch exchage rate froom api
-// calculate the target amount
-// print the target amount to user
