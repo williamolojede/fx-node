@@ -3,8 +3,8 @@ const fx = require('./fx');
 
 // check if user passed the required arguements
 if (process.argv.length === 2) {
-  console.log(chalk.red('Required arguements missing, please check the README!!!'));
-  return 0;
+  console.log(chalk.red('Missing command line arguements, please check the README!!!'));
+  return 1;
 }
 
 const input = process.argv.slice(2);
